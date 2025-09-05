@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import 'tailwind-scrollbar-hide/v4';
+@reference utilities;
+
+@theme {
+  --color-brand-bg: #D6D2C9;
+  --color-brand-text: #3D5135;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  @apply bg-brand-bg font-body text-gray-800;
+}
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading text-brand-text font-extrabold;
+}
