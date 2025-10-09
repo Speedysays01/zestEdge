@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import chef1 from "../assets/parag.jpg"; // Vikram
-import chef2 from "../assets/vikram.png"; // Parag
+import chef1 from "../assets/parag.jpg"; // Parag
+import chef2 from "../assets/vikram.png"; // Vikram
 
 const CulinaryCollabs = () => {
-  const [showVikramFull, setShowVikramFull] = useState(false);
   const [showParagFull, setShowParagFull] = useState(false);
+  const [showVikramFull, setShowVikramFull] = useState(false);
 
   return (
-    <section id="culinary-collabs" className="min-h-screen bg-white flex items-center py-10">
+    <section id="culinary-collabs" className="min-h-screen bg-white flex items-center py-10 overflow-x-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Title */}
         <motion.h2
@@ -22,9 +22,9 @@ const CulinaryCollabs = () => {
         </motion.h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:h-[70vh]">
-
-  {/* Chef Parag */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:h-[65vh]">
+          
+          {/* Chef Parag */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -33,11 +33,11 @@ const CulinaryCollabs = () => {
             className="bg-brand-bg rounded-2xl shadow-lg flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
           >
             {/* Image */}
-            <div className="w-full md:w-[45%] h-48 md:h-full">
+            <div className="w-full md:w-[45%] h-48 md:h-full flex items-center justify-center border-b mb-1">
               <img
                 src={chef1}
                 alt="Chef Parag Kapile"
-                className="w-full h-full object-cover rounded-t-2xl md:rounded-none md:rounded-l-2xl"
+                className="w-auto h-full md:w-full md:h-full object-contain md:object-cover object-center rounded-t-2xl md:rounded-none md:rounded-l-2xl  mt-2 md:mt-0"
               />
             </div>
 
@@ -71,10 +71,6 @@ const CulinaryCollabs = () => {
             </div>
           </motion.div>
 
-
-
-
-
           {/* Chef Vikram */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -84,11 +80,11 @@ const CulinaryCollabs = () => {
             className="bg-brand-bg rounded-2xl shadow-lg flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
           >
             {/* Image */}
-            <div className="w-full md:w-[45%] h-48 md:h-full">
+            <div className="w-full md:w-[45%] h-48 md:h-full flex items-center justify-center border-b mb-1">
               <img
                 src={chef2}
                 alt="Chef Vikram Singh Negi"
-                className="w-full h-full object-cover rounded-t-2xl md:rounded-none md:rounded-l-2xl"
+                className="w-auto h-full md:w-full md:h-full object-contain md:object-cover object-center rounded-t-2xl md:rounded-none md:rounded-l-2xl  mt-2 md:mt-0"
               />
             </div>
 
@@ -122,7 +118,6 @@ const CulinaryCollabs = () => {
             </div>
           </motion.div>
 
-        
         </div>
       </div>
     </section>

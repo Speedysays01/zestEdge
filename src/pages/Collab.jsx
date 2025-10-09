@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
 import { useState } from "react";
 import partner1 from "../assets/partner1.jpg";
 import partner2 from "../assets/partner2.jpg";
@@ -8,7 +8,7 @@ const Collab = () => {
   const [showAbhiFull, setShowAbhiFull] = useState(false);
 
   return (
-    <section id="collaborating-partners" className="min-h-screen bg-brand-bg flex items-center py-6">
+    <section id="collaborating-partners" className="min-h-screen bg-brand-bg flex items-center py-6 overflow-x-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Title */}
         <motion.h2
@@ -32,11 +32,11 @@ const Collab = () => {
             className="bg-white rounded-2xl shadow-lg flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
           >
             {/* Image */}
-            <div className="w-full md:w-[45%] h-48 md:h-full">
+            <div className="w-full md:w-[45%] h-48 md:h-full flex items-center justify-center">
               <img
                 src={partner1}
                 alt="Manoj Jaiswal"
-                className="w-full h-full object-cover rounded-t-2xl md:rounded-none md:rounded-l-2xl"
+                className="w-auto h-full md:w-full md:h-full object-contain md:object-cover object-center mt-2 md:mt-0"
               />
             </div>
 
@@ -79,11 +79,11 @@ const Collab = () => {
             className="bg-white rounded-2xl shadow-lg flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
           >
             {/* Image */}
-            <div className="w-full md:w-[45%] h-48 md:h-full">
+            <div className="w-full md:w-[45%] h-48 md:h-full flex items-center justify-center">
               <img
                 src={partner2}
                 alt="Abhimanyu Pareek"
-                className="w-full h-full object-cover rounded-t-2xl md:rounded-none md:rounded-l-2xl"
+                className="w-auto h-full md:w-full md:h-full object-contain md:object-cover object-center mt-2 md:mt-0 "
               />
             </div>
 
