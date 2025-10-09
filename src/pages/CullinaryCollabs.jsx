@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import partner1 from "../assets/partner1.jpg";
-import partner2 from "../assets/partner2.jpg";
+import chef1 from "../assets/parag.jpg"; // Vikram
+import chef2 from "../assets/vikram.png"; // Parag
 
-const Collab = () => {
-  const [showManojFull, setShowManojFull] = useState(false);
-  const [showAbhiFull, setShowAbhiFull] = useState(false);
+const CulinaryCollabs = () => {
+  const [showVikramFull, setShowVikramFull] = useState(false);
+  const [showParagFull, setShowParagFull] = useState(false);
 
   return (
-    <section id="collaborating-partners" className="min-h-screen bg-brand-bg flex items-center py-6">
+    <section id="culinary-collabs" className="min-h-screen bg-white flex items-center py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Title */}
         <motion.h2
@@ -18,71 +18,25 @@ const Collab = () => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-heading text-center text-brand-text mb-10"
         >
-          F&amp;B Service Collaborators
+          Culinary Collaborators
         </motion.h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:h-[65vh]">
-          {/* Partner 1 */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-2xl shadow-lg flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
-          >
-            {/* Image */}
-            <div className="w-full md:w-[45%] h-48 md:h-full">
-              <img
-                src={partner1}
-                alt="Manoj Jaiswal"
-                className="w-full h-full object-cover rounded-t-2xl md:rounded-none md:rounded-l-2xl"
-              />
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:h-[70vh]">
 
-            {/* Text */}
-            <div className="w-full md:w-[55%] p-5 md:p-6 flex flex-col justify-center text-center md:text-left">
-              <h3 className="text-xl md:text-2xl font-heading text-brand-text mb-1">
-                Manoj Jaiswal
-              </h3>
-              <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
-                Senior Hospitality Strategist | F&amp;B Operations Specialist
-              </p>
-
-              <p className="text-gray-700 leading-relaxed text-sm md:text-base font-body">
-                {showManojFull ? (
-                  <>
-                    With two decades of experience across India and the Middle East, Manoj brings deep operational insight and leadership to ZestEdge Hospitality. His journey spans roles in Sarovar Park Plaza, Blue Foods, and Elite Seef Residences, Bahrain.
-                  </>
-                ) : (
-                  <>
-                    With two decades of experience across India and the Middle East, Manoj brings deep operational insight and leadership to ZestEdge.
-                  </>
-                )}
-              </p>
-
-              <button
-                onClick={() => setShowManojFull(!showManojFull)}
-                className="mt-2 text-brand-text text-sm font-semibold hover:underline"
-              >
-                {showManojFull ? "Read Less" : "Read More"}
-              </button>
-            </div>
-          </motion.div>
-
-          {/* Partner 2 */}
+  {/* Chef Parag */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-white rounded-2xl shadow-lg flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
+            className="bg-brand-bg rounded-2xl shadow-lg flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
           >
             {/* Image */}
             <div className="w-full md:w-[45%] h-48 md:h-full">
               <img
-                src={partner2}
-                alt="Abhimanyu Pareek"
+                src={chef1}
+                alt="Chef Parag Kapile"
                 className="w-full h-full object-cover rounded-t-2xl md:rounded-none md:rounded-l-2xl"
               />
             </div>
@@ -90,36 +44,89 @@ const Collab = () => {
             {/* Text */}
             <div className="w-full md:w-[55%] p-5 md:p-6 flex flex-col justify-center text-center md:text-left">
               <h3 className="text-xl md:text-2xl font-heading text-brand-text mb-1">
-                Abhimanyu Pareek
+                Chef Parag Kapile
               </h3>
               <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
-                Strategic Growth &amp; Marketing | Digital Outreach
+                Culinary Strategist &amp; Educator – ZestEdge | Founder, Tarka Dining
               </p>
 
               <p className="text-gray-700 leading-relaxed text-sm md:text-base font-body">
-                {showAbhiFull ? (
+                {showParagFull ? (
                   <>
-                    Abhimanyu combines aggregator expertise, digital marketing acumen, and entrepreneurial spirit. Formerly with Zomato, he led expansion and growth strategies across India, driving performance and visibility.
+                    Chef Parag brings 22 years of global experience spanning luxury hotels, cruise lines, and fine dining across continents. As founder of Tarka Dining, he pioneers immersive, globally inspired Indian cuisine experiences and leads culinary innovation, education, and concept development for ZestEdge Hospitality.
                   </>
                 ) : (
                   <>
-                    Abhimanyu brings aggregator expertise and digital marketing leadership to ZestEdge Hospitality.
+                    With 22+ years of global hospitality experience, Chef Parag leads innovation and education at ZestEdge, blending authentic Indian flavors with modern culinary artistry.
                   </>
                 )}
               </p>
 
               <button
-                onClick={() => setShowAbhiFull(!showAbhiFull)}
+                onClick={() => setShowParagFull(!showParagFull)}
                 className="mt-2 text-brand-text text-sm font-semibold hover:underline"
               >
-                {showAbhiFull ? "Read Less" : "Read More"}
+                {showParagFull ? "Read Less" : "Read More"}
               </button>
             </div>
           </motion.div>
+
+
+
+
+
+          {/* Chef Vikram */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="bg-brand-bg rounded-2xl shadow-lg flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
+          >
+            {/* Image */}
+            <div className="w-full md:w-[45%] h-48 md:h-full">
+              <img
+                src={chef2}
+                alt="Chef Vikram Singh Negi"
+                className="w-full h-full object-cover rounded-t-2xl md:rounded-none md:rounded-l-2xl"
+              />
+            </div>
+
+            {/* Text */}
+            <div className="w-full md:w-[55%] p-5 md:p-6 flex flex-col justify-center text-center md:text-left">
+              <h3 className="text-xl md:text-2xl font-heading text-brand-text mb-1">
+                Chef Vikram Singh Negi
+              </h3>
+              <p className="text-sm md:text-base font-semibold text-gray-700 mb-3">
+                Culinary Strategist &amp; Kitchen Operations Mentor – ZestEdge Hospitality
+              </p>
+
+              <p className="text-gray-700 leading-relaxed text-sm md:text-base font-body">
+                {showVikramFull ? (
+                  <>
+                    With over 25 years of leadership across India, the UK, Europe, and the Middle East, Chef Vikram brings unmatched depth in kitchen operations, food safety, and menu engineering. He’s led large culinary teams, driven food cost efficiency, and trained hundreds in kitchen optimization, hygiene, and recipe design — guiding owners to build resilient, profitable, and sustainable operations.
+                  </>
+                ) : (
+                  <>
+                    With 25+ years of global experience, Chef Vikram specializes in kitchen operations, food safety, and menu engineering — helping hospitality ventures achieve precision and profitability.
+                  </>
+                )}
+              </p>
+
+              <button
+                onClick={() => setShowVikramFull(!showVikramFull)}
+                className="mt-2 text-brand-text text-sm font-semibold hover:underline"
+              >
+                {showVikramFull ? "Read Less" : "Read More"}
+              </button>
+            </div>
+          </motion.div>
+
+        
         </div>
       </div>
     </section>
   );
 };
 
-export default Collab;
+export default CulinaryCollabs;

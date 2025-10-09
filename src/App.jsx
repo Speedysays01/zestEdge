@@ -13,6 +13,7 @@ import StrategicConsulting from "./components/StrategicConsulting";
 import TurnaroundConsulting from "./components/TurnaroundConsulting";
 import ExpansionStrategy from "./components/ExpansionStrategy";
 import CustomConsulting from "./components/CustomConsulting";
+import CulinaryCollabs from "./pages/CullinaryCollabs";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <Navbar />
       <Routes>
         {/* Main site */}
-        <Route path="/" element={<><Home /><About /><Founder /><Services /><Collab/><Why/><Footer/></>} />
+        <Route path="/" element={<><Home /><About /><Founder /><Services /><Collab/><CulinaryCollabs/><Why/><Footer/></>} />
 
         {/* Services detail pages */}
         <Route path="/services/setup" element={<SetupLaunch />} />

@@ -86,7 +86,7 @@ export default function Services() {
           {doubledServices.map((service, index) => (
             <div
               key={index}
-              className="flex-none w-72 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+              className="flex-none w-72 bg-brand-bg rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
             >
               <img
                 src={service.image}

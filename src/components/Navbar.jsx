@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "Founder’s Bio", href: "#founder" },
     { name: "Team", href: "#team" },
     { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "Connect", href: "#contact" },
   ];
 
   return (
@@ -33,7 +33,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-brand-text font-heading font-extrabold hover:text-amber-950 hover:opacity-70 transition"
+                className="text-brand-text font-heading font-extrabold hover:text-amber-950 hover:opacity-70 hover:decoration-1 transition"
               >
                 {link.name}
               </a>

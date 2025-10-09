@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import hero from "../assets/hero.mp4";
+import hero from "../assets/latest.mp4";
 
 const Home = () => {
   const videoRef = useRef(null);
