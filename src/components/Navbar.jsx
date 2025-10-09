@@ -33,7 +33,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-brand-text font-heading font-extrabold hover:text-amber-950 hover:opacity-70 hover:decoration-1 transition"
+                className="text-brand-text font-heading font-extrabold hover:text-amber-950 hover:opacity-70 hover:text- transition"
               >
                 {link.name}
               </a>
@@ -41,9 +41,9 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden mr-6">
             <button onClick={() => setIsOpen(true)}>
-              <Menu className="h-6 w-6 text-brand-text" />
+              <Menu className="h-6 w-6 mr-6 text-brand-text" />
             </button>
           </div>
         </div>
