@@ -17,7 +17,10 @@ import CulinaryCollabs from "./pages/CullinaryCollabs";
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
+
+
+
       <Navbar />
       <Routes>
         {/* Main site */}
@@ -30,7 +33,7 @@ function App() {
         <Route path="/services/expansion" element={<ExpansionStrategy />} />
         <Route path="/services/custom" element={<CustomConsulting />} />
       </Routes>
-    </>
+  </div>
   );
 }
 
