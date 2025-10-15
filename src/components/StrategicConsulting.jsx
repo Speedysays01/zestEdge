@@ -1,7 +1,8 @@
 // src/pages/StrategicConsulting.jsx
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import strategy from '../assets/strategy.jpg'
+import strategy from '../assets/strategy.jpg';
+import { ArrowLeft } from "lucide-react";
 
 export default function StrategicConsulting() {
   const points = [
@@ -14,6 +15,7 @@ export default function StrategicConsulting() {
 
   return (
     <section className="py-16 bg-gray-50 min-h-screen flex items-center">
+           
       <div className="max-w-7xl mx-auto px-6">
         {/* Back Button */}
         <div className="mb-6">

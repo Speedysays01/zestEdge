@@ -14,6 +14,7 @@ import TurnaroundConsulting from "./components/TurnaroundConsulting";
 import ExpansionStrategy from "./components/ExpansionStrategy";
 import CustomConsulting from "./components/CustomConsulting";
 import CulinaryCollabs from "./pages/CullinaryCollabs";
+import BudegtCalculator from "./pages/BudegtCalculator";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       <Navbar />
       <Routes>
         {/* Main site */}
-        <Route path="/" element={<><Home /><About /><Founder /><Services /><Collab/><CulinaryCollabs/><Why/><Footer/></>} />
+        <Route path="/" element={<><Home /><About /><Services /><Founder /><Collab/><Why/><Footer/></>} />
 
         {/* Services detail pages */}
         <Route path="/services/setup" element={<SetupLaunch />} />
@@ -32,6 +33,7 @@ function App() {
         <Route path="/services/turnaround" element={<TurnaroundConsulting />} />
         <Route path="/services/expansion" element={<ExpansionStrategy />} />
         <Route path="/services/custom" element={<CustomConsulting />} />
+             <Route path="/budget-calculator" element={<BudegtCalculator/>} />
       </Routes>
   </div>
   );

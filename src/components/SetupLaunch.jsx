@@ -1,7 +1,7 @@
 // src/pages/SetupLaunch.jsx
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { ArrowLeft } from "lucide-react";
 import setup from '../assets/setup.jpg';
 
 export default function SetupLaunch() {
@@ -15,6 +15,7 @@ export default function SetupLaunch() {
 
   return (
     <section className="py-16 bg-gray-50 min-h-screen flex items-center">
+             
       <div className="max-w-7xl mx-auto px-6">
         {/* Back Button */}
         <div className="mb-6">

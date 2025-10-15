@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.png'
 import { X, Menu } from "lucide-react"; // icons
 
 const Navbar = () => {
@@ -7,10 +7,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Founder’s Bio", href: "#founder" },
-    { name: "Team", href: "#team" },
-    { name: "Services", href: "#services" },
+    { name: "What's ZestEdge", href: "#about" },
+    { name: "Know our founders", href: "#founder" },
+    { name: "Minds behind ZestEdge", href: "#team" },
+    { name: "What we provide", href: "#services" },
     { name: "Connect", href: "#contact" },
   ];
 

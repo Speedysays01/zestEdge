@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import hero from "../assets/latest.mp4";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -44,7 +45,8 @@ const Home = () => {
             with strategy, precision, and heart.
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          {/* Buttons */}
+          <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start">
             <a
               href="#services"
               className="px-6 py-3 bg-brand-text text-white rounded-2xl shadow-md hover:opacity-90 transition font-body"
@@ -56,6 +58,20 @@ const Home = () => {
               className="px-6 py-3 border-2 border-brand-text text-brand-text rounded-2xl hover:bg-brand-text hover:text-white transition font-body"
             >
               Book a Consultation
+            </a>
+            <Link
+              to={"/budget-calculator"}
+              className="px-6 py-3 border-2 border-brand-text text-brand-text rounded-2xl hover:bg-brand-text hover:text-white transition font-body"
+            >
+              Budget Calculator
+            </Link>
+            <a
+              href="/ZestEdge_Brochure.pdf" // 👈 Replace with your actual brochure file path
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-brand-text text-white rounded-2xl shadow-md hover:opacity-90 transition font-body"
+            >
+              Download Brochure
             </a>
           </div>
         </motion.div>
