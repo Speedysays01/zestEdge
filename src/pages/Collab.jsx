@@ -4,6 +4,7 @@ import partner1 from "../assets/partner1.jpg"; // Manoj
 import partner2 from "../assets/partner2.jpg"; // Abhimanyu
 import chef1 from "../assets/parag.jpg"; // Parag
 import chef2 from "../assets/vikram.png"; // Vikram
+import kedar from "../assets/kedar.jpg"
 
 const Collab = () => {
   const [showManojFull, setShowManojFull] = useState(false);
@@ -56,6 +57,17 @@ const Collab = () => {
       state: showVikramFull,
       setState: setShowVikramFull,
     },
+     {
+      id: 5,
+      name: "Kedar Lele",
+      role: "Training & Development, Mindset Architect, Hospitality Trainer, Emotional Intelligence Coach",
+      img: kedar,
+      short:
+        "With over 21 years of experience, Kedar spearheads employee training programs across all verticals, including F&B, Front Office, and Guest Experience, ensuring every team member embodies ZestEdge’s commitment to excellence.",
+      full: "With over 21 years of experience, Kedar spearheads employee training programs across all verticals, including F&B, Front Office, and Guest Experience, ensuring every team member embodies ZestEdge’s commitment to excellence. His pre-opening training modules are tailored to each concept’s ethos - whether boutique, quick service, or experiential dining - ensuring seamless launches and operational readiness.",
+      state: showVikramFull,
+      setState: setShowVikramFull,
+    },
   ];
 
   return (
@@ -88,13 +100,23 @@ const Collab = () => {
               md:h-[30vh] h-auto`}
             >
               {/* Image */}
-              <div className="w-full md:w-[40%] h-56 md:h-full">
+              {/* <div className="w-full md:w-[40%] h-56 md:h-full">
                 <img
                   src={person.img}
                   alt={person.name}
                   className="w-full h-full object-cover"
                 />
-              </div>
+              </div> */}
+
+              {/* Image */}
+<div className="w-full md:w-[40%] h-56 md:h-full flex items-center justify-center bg-white">
+  <img
+    src={person.img}
+    alt={person.name}
+    className="max-h-full w-auto object-contain rounded-lg"
+  />
+</div>
+
 
               {/* Text */}
               <div className="w-full md:w-[60%] p-4 md:p-6 flex flex-col justify-center text-center md:text-left">
@@ -130,6 +152,10 @@ export default Collab;
 
 
 
+// raining & Development | Mindset Architect | Hospitality Trainer | Emotional Intelligence Coach 
+//  With over 21 years of experience across leading hospitality brands and academic institutions, such as Holiday Inn, Radisson Blu, and various boutique resorts. Kedar, is a double graduate and a certified trainer & facilitator, who brings a rare blend of operational insight, emotional intelligence, and training excellence to ZestEdge Hospitality. As Lead - Training & Development, he plays a pivotal role in shaping the mindset, skillset, and service culture of our teams.
+
+// Kedar spearheads employee training programs across all verticals, including F&B, Front Office, and Guest Experience, ensuring every team member embodies ZestEdge’s commitment to excellence. His pre-opening training modules are tailored to each concept’s ethos - whether boutique, quick service, or experiential dining - ensuring seamless launches and operational readiness.
 
 
 

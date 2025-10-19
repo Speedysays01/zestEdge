@@ -8,7 +8,18 @@ const Founder = () => {
 
   return (
     <section id="founder" className="py-20 bg-brand-bg">
+       <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl font-heading text-center text-brand-text mb-12"
+        >
+          The Pioneers Behind ZestEdge Hospitality
+        </motion.h2>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        
         {/* Founder 1 */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

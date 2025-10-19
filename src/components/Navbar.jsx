@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "Home", href: "#" },
     { name: "What's ZestEdge", href: "#about" },
     { name: "Know our founders", href: "#founder" },
-    { name: "Minds behind ZestEdge", href: "#team" },
+    { name: "Minds behind ZestEdge", href: "#minds-together" },
     { name: "What we provide", href: "#services" },
     { name: "Connect", href: "#contact" },
   ];
@@ -23,7 +23,7 @@ const Navbar = () => {
             <img
               src={logo} // replace with your logo path
               alt="ZestEdge"
-              className="h-10 w-auto"
+              className="h-20 w-auto"
             />
           </div>
 
