@@ -51,7 +51,7 @@ const Home = () => {
               href="#services"
               className="px-6 py-3 bg-brand-text text-white rounded-2xl shadow-md hover:opacity-90 transition font-body"
             >
-              Explore Our Services
+              What we provide at ZestEdge
             </a>
             <a
               href="#contact"

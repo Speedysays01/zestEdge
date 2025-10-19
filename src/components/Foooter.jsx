@@ -33,7 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="#collaborating-partners" className="hover:text-white transition">
-                Collaborating Partners
+                Team together in purpose
               </a>
             </li>
           </ul>

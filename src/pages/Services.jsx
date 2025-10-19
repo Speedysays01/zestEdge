@@ -11,35 +11,35 @@ const services = [
   {
     id: 1,
     title: "Setup & Launch",
-    icon: "🏗️",
+    // icon: "🏗️",
     image: setup,
     link: "/services/setup",
   },
   {
     id: 2,
     title: "Strategic Consulting",
-    icon: "📈",
+    // icon: "📈",
     image: strategy,
     link: "/services/strategic",
   },
   {
     id: 3,
     title: "Turnaround Consulting",
-    icon: "🔧",
+    // icon: "🔧",
     image: turnaround,
     link: "/services/turnaround",
   },
   {
     id: 4,
     title: "Expansion Strategy",
-    icon: "🌐",
+    // icon: "🌐",
     image: expansion,
     link: "/services/expansion",
   },
   {
     id: 5,
     title: "Custom Consulting",
-    icon: "🧠",
+    // icon: "🧠",
     image: custom,
     link: "/services/custom",
   },
@@ -76,7 +76,7 @@ export default function Services() {
   return (
     <section className="py-16 bg-gray-50" id="services">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-10">Our Services</h2>
+        <h2 className="text-3xl font-bold text-center mb-10">What we provide</h2>
 
         {/* Slider */}
         <div
@@ -95,7 +95,7 @@ export default function Services() {
               />
               <div className="p-4 text-center">
                 <h3 className="text-lg font-semibold mb-2">
-                  {service.icon} {service.title}
+                   {service.title}
                 </h3>
                 <Link
                   to={service.link}
