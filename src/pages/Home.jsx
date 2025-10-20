@@ -40,7 +40,7 @@ const Home = () => {
           <h1 className="text-4xl md:text-5xl font-heading text-brand-text leading-tight">
             Crafting Hospitality with Purpose.
           </h1>
-          <p className="mt-4 text-lg text-gray-700 font-body">
+          <p className="mt-4 text-lg text-gray-700 font-body text-justify">
             From cafés to cloud kitchens, we bring your F&amp;B vision to life – 
             with strategy, precision, and heart.
           </p>

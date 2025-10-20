@@ -7,7 +7,7 @@ const Founder = () => {
   const [showRupaliFull, setShowRupaliFull] = useState(false);
 
   return (
-    <section id="founder" className="py-20 bg-brand-bg">
+    <section id="founder" className="py-20 bg-brand-bg text-justify">
        <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ const Founder = () => {
             </span>
           </p>
 
-          <p className="text-gray-700 font-body leading-relaxed text-lg">
+          <p className="text-gray-700 font-body leading-relaxed text-lg text-justify">
             {showManishFull ? (
               <>
                 With a career spanning nearly three decades, Manish Khasgiwala has led hospitality operations across India and the Middle East – steering luxury resorts, extended stays, business hotels, multi-cuisine restaurants, cloud kitchens, and senior living formats toward operational excellence. He began his journey as a chef, mastering the art of food before evolving into a strategic force behind some of the region’s most successful F&amp;B ventures. <br /><br />
@@ -85,7 +85,7 @@ const Founder = () => {
             </span>
           </p>
 
-          <p className="text-gray-700 font-body leading-relaxed text-lg">
+          <p className="text-gray-700 font-body leading-relaxed text-lg text-justify">
             {showRupaliFull ? (
               <>
                 Rupali joins ZestEdge Hospitality as a Director, bringing with her a strong foundation in healthcare, business operations, and customer-centric service. A qualified pharmacist and proprietor of a successful pharmacy business, she’s built a reputation for precision and integrity. <br /><br />

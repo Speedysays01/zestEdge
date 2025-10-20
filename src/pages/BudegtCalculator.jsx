@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import cafe from "../assets/cafe.jpg";
 import restaurant from "../assets/restaurant.jpg";
-import kiosk from "../assets/kiosk.jpg";
-import lounge from "../assets/lounge.jpg";
+import kiosk from "../assets/kiosk.png";
+import lounge from "../assets/central.jpg";
 import cloud from "../assets/cloud.jpg";
-import qsr from "../assets/qsr.jpg";
-import central from "../assets/central.jpg"; // placeholder, replace later
+import qsr from "../assets/qsr.png";
+import central from "../assets/central.png"; // placeholder, replace later
 import Footer from "../components/Foooter";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
@@ -51,7 +51,7 @@ const BudgetCalculator = () => {
 
   return (
     <>
-    <section className="bg-white py-16 px-6 md:px-12 lg:px-20 overflow-x-hidden mt-8">
+    <section className="bg-white py-16 px-6 md:px-12 lg:px-20 overflow-x-hidden mt-8 text-justify">
         <Link
   to="/"
   className="flex items-center gap-2 px-4 py-2 text-gray-800 border border-gray-400 rounded-full 
@@ -78,7 +78,7 @@ const BudgetCalculator = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-3xl mx-auto text-gray-700 font-body text-base md:text-lg leading-relaxed mb-8"
+          className="max-w-3xl mx-auto text-gray-700 font-body text-base md:text-lg leading-relaxed mb-8 text-justify"
         >
           Our prospective clients are entrepreneurs or investors eager to start or revamp their food ventures.
           Below is an indicative budget range for different types of F&amp;B establishments. Understanding the
@@ -89,7 +89,7 @@ const BudgetCalculator = () => {
 
         {/* WhatsApp CTA */}
         <motion.a
-          href="https://wa.me/919999999999" // 🔁 replace with actual number
+          href="https://wa.me/8805240524" // 🔁 replace with actual number
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}

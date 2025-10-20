@@ -43,7 +43,7 @@ const Footer = () => {
         <div>
           <h4 className="text-xl font-semibold mb-4">Contact</h4>
           <p className="text-gray-200 text-sm">
-            Email: <a href="mailto:info@zestedge.com" className="hover:text-white">Manish.khasgiwala@gmail.com</a>
+            Email: <a href="mailto:support@zestedge.in" className="hover:text-white">support@zestedge.in</a>
           </p>
          
           <p className="text-gray-200 text-sm mt-2">

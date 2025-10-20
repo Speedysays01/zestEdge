@@ -6,7 +6,8 @@ import Founder from "./pages/Founder";
 import Services from "./pages/Services";
 import Why from "./pages/Why";
 import Collab from "./pages/Collab";
-import Footer from './components/Foooter'
+import Footer from './components/Foooter';
+import Connect from "./pages/Connect";
 // Service detail pages
 import SetupLaunch from "./components/SetupLaunch";
 import StrategicConsulting from "./components/StrategicConsulting";
@@ -25,7 +26,7 @@ function App() {
       <Navbar />
       <Routes>
         {/* Main site */}
-        <Route path="/" element={<><Home /><About /><Services /><Founder /><Collab/><Why/><Footer/></>} />
+        <Route path="/" element={<><Home /><About /><Services /><Founder /><Collab/><Why/><Connect/><Footer/></>} />
 
         {/* Services detail pages */}
         <Route path="/services/setup" element={<SetupLaunch />} />

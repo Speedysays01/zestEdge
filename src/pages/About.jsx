@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <section id="about" className="py-10 bg-white">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-justify">
         
         {/* Fancy Title */}
         <motion.h2
@@ -61,7 +61,7 @@ const About = () => {
           viewport={{ once: true }}
           className="mt-10"
         >
-          <p className="text-2xl md:text-3xl font-heading font-semibold text-brand-text italic relative">
+          <p className="text-2xl md:text-3xl font-heading font-semibold text-brand-text italic relative text-center">
             “Your growth, our blueprint. Let’s build something unforgettable.”
           </p>
         </motion.div>
