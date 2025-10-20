@@ -2,6 +2,12 @@
 @import 'tailwind-scrollbar-hide/v4';
 @reference utilities;
 
+
+:root {
+  color-scheme: light;
+}
+
+
 @theme {
   --color-brand-bg: #D6D2C9;
   --color-brand-text: #3D5135;
