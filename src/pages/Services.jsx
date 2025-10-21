@@ -76,7 +76,7 @@ export default function Services() {
   return (
     <section className="py-16 bg-gray-50" id="services">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-10">What we provide</h2>
+        <h2 className="text-3xl font-bold text-center mb-10">What We Provide</h2>
 
         {/* Slider */}
         <div
@@ -99,7 +99,7 @@ export default function Services() {
                 </h3>
                 <Link
                   to={service.link}
-                  className="mt-3 inline-block px-4 py-2 bg-brand-text text-white rounded-2xl hover:bg-emerald-700 transition-colors"
+                  className="mt-3 inline-block px-4 py-2 bg-brand-text text-white rounded-2xl hover:bg-black transition-colors"
                 >
                   Explore
                 </Link>

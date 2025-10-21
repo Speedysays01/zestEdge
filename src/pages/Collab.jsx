@@ -41,7 +41,7 @@ const Collab = () => {
     {
       id: 3,
       name: "Chef Parag Kapile",
-      role: "Culinary Strategist & Educator – ZestEdge | Founder, Tarka Dining",
+      role: "Culinary Strategist & Educator | Founder, Tarka Dining",
       img: chef1,
       short:
         "With 22+ years of global hospitality experience, Chef Parag leads innovation and education at ZestEdge, blending authentic Indian flavors with modern culinary artistry.",
@@ -52,7 +52,7 @@ const Collab = () => {
     {
       id: 4,
       name: "Chef Vikram Singh Negi",
-      role: "Culinary Strategist & Kitchen Operations Mentor – ZestEdge Hospitality",
+      role: "Culinary Strategist & Kitchen Operations Mentor",
       img: chef2,
       short:
         "With 25+ years of global experience, Chef Vikram specializes in kitchen operations, food safety, and menu engineering — helping hospitality ventures achieve precision and profitability.",
@@ -63,7 +63,7 @@ const Collab = () => {
     {
       id: 5,
       name: "Kedar Lele",
-      role: "Training & Development, Mindset Architect, Hospitality Trainer, Emotional Intelligence Coach",
+      role: "Training & Development |Hospitality Trainer | Emotional Intelligence Coach",
       img: kedar,
       short:
         "With over 21 years of experience, Kedar spearheads employee training programs across all verticals, including F&B, Front Office, and Guest Experience, ensuring every team member embodies ZestEdge’s commitment to excellence.",
@@ -74,7 +74,7 @@ const Collab = () => {
     {
       id: 6,
       name: "Pi Mediaworks",
-      role: "Communication & Digital Growth Partners – ZestEdge Hospitality",
+      role: "Communication & Digital Growth Partners",
       img: pi,
       short:
         "Team Pi Mediaworks serves as ZestEdge Hospitality’s dedicated partner for brand communication, digital marketing, and online growth strategy.",

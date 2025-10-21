@@ -9,8 +9,8 @@ const Navbar = () => {
     { name: "Home", href: "#" },
     { name: "What's ZestEdge", href: "#about" },
     { name: "Founders", href: "#founder" },
-    { name: "Minds behind ZestEdge", href: "#minds-together" },
-    { name: "What we provide", href: "#services" },
+    { name: "Minds Behind ZestEdge", href: "#minds-together" },
+    { name: "What We Provide", href: "#services" },
     { name: "Connect", href: "#contact" },
   ];
 

@@ -1,6 +1,6 @@
 // src/components/Why.jsx
 import { motion } from "framer-motion";
-import why from '../assets/why.jpg'
+import why from '../assets/logo.png'
 
 export default function Why() {
   const points = [
@@ -13,8 +13,8 @@ export default function Why() {
 
   return (
     <section className="py-16 bg-brand-bg" id="why">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-6 ">
+        <div className="grid md:grid-cols-2 gap-10 items-center ml-20">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}

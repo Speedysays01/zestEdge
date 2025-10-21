@@ -11,7 +11,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-heading text-#E2725B mb-8 relative inline-block -mt-4"
+          className="text-3xl md:text-4xl font-heading text-#E2725B mb-8 relative inline-block -mt-4 text-center  "
         >
           About ZestEdge Hospitality
           <span className="absolute -bottom-2 left-1/2 md:left-0 w-16 h-1 bg-brand-text transform -translate-x-1/2 md:translate-x-0"></span>

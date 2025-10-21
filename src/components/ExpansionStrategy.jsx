@@ -1,7 +1,7 @@
 // src/pages/ExpansionStrategy.jsx
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import exapansion from '../assets/expansion.jpg'
+import expansion from '../assets/expansion.jpg'
 import {ArrowLeft} from "lucide-react"
 
 export default function ExpansionStrategy() {
